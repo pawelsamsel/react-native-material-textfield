@@ -609,6 +609,7 @@ export default class TextField extends PureComponent {
       editable,
       tintColor,
       style: inputStyleOverrides,
+      value
     } = this.props;
 
     let props = this.inputProps();
@@ -627,7 +628,7 @@ export default class TextField extends PureComponent {
         onContentSizeChange={this.onContentSizeChange}
         onFocus={this.onFocus}
         onBlur={this.onBlur}
-        value={this.value()}
+        value={value}
         ref={this.inputRef}
       />
     );
